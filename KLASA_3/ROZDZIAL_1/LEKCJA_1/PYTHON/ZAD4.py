@@ -9,5 +9,7 @@ def rozloz(liczba):
 
 
 do_rozlozenia=int(input('Podaj liczbe: '))
-for x in rozloz(do_rozlozenia):
-    print(x)
+rozlozone=rozloz(do_rozlozenia)
+while not rozlozone.isEmpty():
+    print(rozlozone.peek())
+    rozlozone.pop()
